@@ -12,6 +12,12 @@
         #acordeon{
             width:400px;
         }
+        .caja{
+            width:400px;
+            height: 400px;
+            background-color: lightgreen;
+            border: solid 1px black;
+        }
     </style>
 </head>
 <body>
@@ -49,12 +55,16 @@
         </div>
     </div>
     <h2>Ejemplo arrastable</h2>
-    <p id="arrastrable">Arrastrame</p>
+    <div class="caja" id="limite">
+        <span id="arrastrable">Arrastrame</span>
+    </div>
     <script>
         $(function(){
             $('#acordeon').accordion()
             $('#pestañas').tabs()
-            $('#arrastrable').draggable()
+            $('#arrastrable').draggable({
+                containment:'#limite'
+            })
         })
     </script>
 </body>
