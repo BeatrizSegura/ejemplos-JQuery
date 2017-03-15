@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo jQueryUI</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <style>
+        #acordeon{
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplos de jQueryUI</h1>
+    <h2>Ejemplo de acordeon</h2>
+    <div id="acordeon">
+        <h3>Encabezado 1</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium rerum animi officia, fugit officiis nostrum recusandae doloribus dignissimos ea tenetur vitae delectus ullam quasi voluptas sit! Ipsa cum quia, asperiores!</p>
+        </div>
+        <h3>Encabezado 2</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium rerum animi officia, fugit officiis nostrum recusandae doloribus dignissimos ea tenetur vitae delectus ullam quasi voluptas sit! Ipsa cum quia, asperiores!</p>
+        </div>
+        <h3>Encabezado 3</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium rerum animi officia, fugit officiis nostrum recusandae doloribus dignissimos ea tenetur vitae delectus ullam quasi voluptas sit! Ipsa cum quia, asperiores!</p>
+        </div>
+    </div>
+    <h2>Ejemplo de Pestañas</h2>
+    <div id="pestañas">
+        <ul>
+            <li> <a href="#contenido1">Pestaña 1</a> </li>
+            <li> <a href="#contenido2">Pestaña 2</a> </li>
+            <li> <a href="#contenido3">Pestaña 3</a> </li>
+        </ul>
+        <div id= "contenido1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div id= "contenido2">
+            <p>Ut officiis dolores ipsum illo, autem porro itaque laborum necessitatibus saepe ab iure quo odit, beatae, veniam maxime. Amet, similique veniam harum?</p>
+        </div>
+        <div id= "contenido3">
+            <p>Amet, similique veniam harum?</p>
+        </div>
+    </div>
+    <h2>Ejemplo arrastable</h2>
+    <p id="arrastrable">Arrastrame</p>
+    <script>
+        $(function(){
+            $('#acordeon').accordion()
+            $('#pestañas').tabs()
+            $('#arrastrable').draggable()
+        })
+    </script>
+</body>
+</html>
